@@ -7,14 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3230804AD15C9243672345 /* Pods_Brands_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979E73FDBD4FDEE0B9E4BFE0 /* Pods_Brands_RxSwift.framework */; };
 		74E7273B275BBC3300B76092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E7273A275BBC3300B76092 /* Assets.xcassets */; };
 		74E7273E275BBC3300B76092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E7273C275BBC3300B76092 /* LaunchScreen.storyboard */; };
-		74E72747275BBEC300B76092 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 74E72746275BBEC300B76092 /* FirebaseAuth */; };
-		74E72749275BBEC300B76092 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 74E72748275BBEC300B76092 /* FirebaseFirestore */; };
-		74E7274B275BBEC300B76092 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 74E7274A275BBEC300B76092 /* FirebaseStorage */; };
-		74E7274E275BBEEC00B76092 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 74E7274D275BBEEC00B76092 /* RxCocoa */; };
-		74E72750275BBEEC00B76092 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 74E7274F275BBEEC00B76092 /* RxSwift */; };
-		74E72756275BBF6B00B76092 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 74E72755275BBF6B00B76092 /* Kingfisher */; };
 		74E727A3275BC07A00B76092 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E72768275BC07A00B76092 /* HomeViewModel.swift */; };
 		74E727A4275BC07A00B76092 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7276A275BC07A00B76092 /* HomeCoordinator.swift */; };
 		74E727A5275BC07A00B76092 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7276C275BC07A00B76092 /* CategoryModel.swift */; };
@@ -46,7 +41,6 @@
 		74E727BF275BC07B00B76092 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7279C275BC07A00B76092 /* ProgressHud.swift */; };
 		74E727C0275BC07B00B76092 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E7279E275BC07A00B76092 /* Extension.swift */; };
 		74E727C4275BC0E300B76092 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74E727C3275BC0E200B76092 /* GoogleService-Info.plist */; };
-		74E727CA275BC31F00B76092 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 74E727C9275BC31F00B76092 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +79,9 @@
 		74E7279C275BC07A00B76092 /* ProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHud.swift; sourceTree = "<group>"; };
 		74E7279E275BC07A00B76092 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		74E727C3275BC0E200B76092 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		855FE42A17A2F419D37909F7 /* Pods-Brands-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brands-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-Brands-RxSwift/Pods-Brands-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		979E73FDBD4FDEE0B9E4BFE0 /* Pods_Brands_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brands_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB874CC0DF3C984BF8B530E /* Pods-Brands-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brands-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-Brands-RxSwift/Pods-Brands-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E72747275BBEC300B76092 /* FirebaseAuth in Frameworks */,
-				74E727CA275BC31F00B76092 /* Alamofire in Frameworks */,
-				74E72749275BBEC300B76092 /* FirebaseFirestore in Frameworks */,
-				74E72756275BBF6B00B76092 /* Kingfisher in Frameworks */,
-				74E72750275BBEEC00B76092 /* RxSwift in Frameworks */,
-				74E7274E275BBEEC00B76092 /* RxCocoa in Frameworks */,
-				74E7274B275BBEC300B76092 /* FirebaseStorage in Frameworks */,
+				0D3230804AD15C9243672345 /* Pods_Brands_RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +101,8 @@
 			children = (
 				74E72730275BBC3000B76092 /* Brands-RxSwift */,
 				74E7272F275BBC3000B76092 /* Products */,
+				98AAF301BE1003BAFD54E8EB /* Pods */,
+				EE42C6232FA69AA77FE4CE90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -394,6 +387,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		98AAF301BE1003BAFD54E8EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECB874CC0DF3C984BF8B530E /* Pods-Brands-RxSwift.debug.xcconfig */,
+				855FE42A17A2F419D37909F7 /* Pods-Brands-RxSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE42C6232FA69AA77FE4CE90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				979E73FDBD4FDEE0B9E4BFE0 /* Pods_Brands_RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,24 +412,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E72742275BBC3300B76092 /* Build configuration list for PBXNativeTarget "Brands-RxSwift" */;
 			buildPhases = (
+				FBC012CE67A619ABF4564251 /* [CP] Check Pods Manifest.lock */,
 				74E7272A275BBC3000B76092 /* Sources */,
 				74E7272B275BBC3000B76092 /* Frameworks */,
 				74E7272C275BBC3000B76092 /* Resources */,
+				D8B92A9C8625FB40970B7273 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Brands-RxSwift";
-			packageProductDependencies = (
-				74E72746275BBEC300B76092 /* FirebaseAuth */,
-				74E72748275BBEC300B76092 /* FirebaseFirestore */,
-				74E7274A275BBEC300B76092 /* FirebaseStorage */,
-				74E7274D275BBEEC00B76092 /* RxCocoa */,
-				74E7274F275BBEEC00B76092 /* RxSwift */,
-				74E72755275BBF6B00B76092 /* Kingfisher */,
-				74E727C9275BC31F00B76092 /* Alamofire */,
-			);
 			productName = "Brands-RxSwift";
 			productReference = 74E7272E275BBC3000B76092 /* Brands-RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -447,12 +451,6 @@
 				Base,
 			);
 			mainGroup = 74E72725275BBC2F00B76092;
-			packageReferences = (
-				74E72745275BBEC300B76092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				74E7274C275BBEEC00B76092 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				74E72754275BBF6B00B76092 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				74E727C8275BC31F00B76092 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = 74E7272F275BBC3000B76092 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -480,6 +478,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8B92A9C8625FB40970B7273 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brands-RxSwift/Pods-Brands-RxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brands-RxSwift/Pods-Brands-RxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brands-RxSwift/Pods-Brands-RxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC012CE67A619ABF4564251 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brands-RxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74E7272A275BBC3000B76092 /* Sources */ = {
@@ -645,6 +685,7 @@
 		};
 		74E72743275BBC3300B76092 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB874CC0DF3C984BF8B530E /* Pods-Brands-RxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -672,6 +713,7 @@
 		};
 		74E72744275BBC3300B76092 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 855FE42A17A2F419D37909F7 /* Pods-Brands-RxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -719,79 +761,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		74E72745275BBEC300B76092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		74E7274C275BBEEC00B76092 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		74E72754275BBF6B00B76092 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		74E727C8275BC31F00B76092 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		74E72746275BBEC300B76092 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E72745275BBEC300B76092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		74E72748275BBEC300B76092 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E72745275BBEC300B76092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		74E7274A275BBEC300B76092 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E72745275BBEC300B76092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		74E7274D275BBEEC00B76092 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E7274C275BBEEC00B76092 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		74E7274F275BBEEC00B76092 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E7274C275BBEEC00B76092 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		74E72755275BBF6B00B76092 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E72754275BBF6B00B76092 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		74E727C9275BC31F00B76092 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 74E727C8275BC31F00B76092 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74E72726275BBC2F00B76092 /* Project object */;
 }
