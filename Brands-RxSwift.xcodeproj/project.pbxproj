@@ -118,11 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				74E72796275BC07A00B76092 /* Core */,
+				74E72793275BC07A00B76092 /* Services */,
 				74E7279D275BC07A00B76092 /* Extension */,
 				74E7279A275BC07A00B76092 /* Helper */,
-				74E7279F275BC07A00B76092 /* Resources */,
 				74E72765275BC07A00B76092 /* Scenes */,
-				74E72793275BC07A00B76092 /* Services */,
+				74E7279F275BC07A00B76092 /* Resources */,
 				74E727C3275BC0E200B76092 /* GoogleService-Info.plist */,
 				74E7273F275BBC3300B76092 /* Info.plist */,
 			);
@@ -393,7 +393,6 @@
 				ECB874CC0DF3C984BF8B530E /* Pods-Brands-RxSwift.debug.xcconfig */,
 				855FE42A17A2F419D37909F7 /* Pods-Brands-RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
