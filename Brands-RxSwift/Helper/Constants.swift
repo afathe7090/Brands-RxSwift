@@ -9,7 +9,7 @@ import Foundation
 
 
 let kUID = "uID"
-
+let kBRANDS = "brands/"
 
 func saveUser(uID: String?){
     UserDefaults.standard.set(uID, forKey: kUID)

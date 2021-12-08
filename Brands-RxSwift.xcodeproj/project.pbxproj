@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0D3230804AD15C9243672345 /* Pods_Brands_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979E73FDBD4FDEE0B9E4BFE0 /* Pods_Brands_RxSwift.framework */; };
+		74C91B942760F496009D142B /* BrandsPhoneDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91B932760F496009D142B /* BrandsPhoneDetailsModel.swift */; };
+		74C91B972760F59C009D142B /* PhoneDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91B962760F59C009D142B /* PhoneDetailViewModel.swift */; };
+		74C91B9A2760F5CE009D142B /* PhoneDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91B992760F5CE009D142B /* PhoneDetailCoordinator.swift */; };
+		74C91B9E2760F624009D142B /* PhoneDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91B9C2760F624009D142B /* PhoneDetailsViewController.swift */; };
+		74C91B9F2760F624009D142B /* PhoneDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C91B9D2760F624009D142B /* PhoneDetailsViewController.xib */; };
+		74C91BA427610289009D142B /* PhoneImagesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91BA227610289009D142B /* PhoneImagesCells.swift */; };
+		74C91BA527610289009D142B /* PhoneImagesCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C91BA327610289009D142B /* PhoneImagesCells.xib */; };
+		74C91BAD27610593009D142B /* PhoneDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C91BAB27610593009D142B /* PhoneDetailsTableViewCell.swift */; };
+		74C91BAE27610593009D142B /* PhoneDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C91BAC27610593009D142B /* PhoneDetailsTableViewCell.xib */; };
 		74E7273B275BBC3300B76092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E7273A275BBC3300B76092 /* Assets.xcassets */; };
 		74E7273E275BBC3300B76092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E7273C275BBC3300B76092 /* LaunchScreen.storyboard */; };
 		74E727A3275BC07A00B76092 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E72768275BC07A00B76092 /* HomeViewModel.swift */; };
@@ -44,6 +53,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74C91B932760F496009D142B /* BrandsPhoneDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsPhoneDetailsModel.swift; sourceTree = "<group>"; };
+		74C91B962760F59C009D142B /* PhoneDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailViewModel.swift; sourceTree = "<group>"; };
+		74C91B992760F5CE009D142B /* PhoneDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailCoordinator.swift; sourceTree = "<group>"; };
+		74C91B9C2760F624009D142B /* PhoneDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailsViewController.swift; sourceTree = "<group>"; };
+		74C91B9D2760F624009D142B /* PhoneDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneDetailsViewController.xib; sourceTree = "<group>"; };
+		74C91BA227610289009D142B /* PhoneImagesCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneImagesCells.swift; sourceTree = "<group>"; };
+		74C91BA327610289009D142B /* PhoneImagesCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneImagesCells.xib; sourceTree = "<group>"; };
+		74C91BAB27610593009D142B /* PhoneDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		74C91BAC27610593009D142B /* PhoneDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		74E7272E275BBC3000B76092 /* Brands-RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brands-RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E7273A275BBC3300B76092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74E7273D275BBC3300B76092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +114,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74C91B8F2760F412009D142B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				74C91B992760F5CE009D142B /* PhoneDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		74C91B902760F42B009D142B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74C91BAA27610579009D142B /* TableViewCell */,
+				74C91BA027610247009D142B /* CollectionViewCell */,
+				74C91B9B2760F605009D142B /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74C91B912760F431009D142B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74C91B962760F59C009D142B /* PhoneDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74C91B922760F43B009D142B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74C91B932760F496009D142B /* BrandsPhoneDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74C91B9B2760F605009D142B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74C91B9C2760F624009D142B /* PhoneDetailsViewController.swift */,
+				74C91B9D2760F624009D142B /* PhoneDetailsViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		74C91BA027610247009D142B /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				74C91BA227610289009D142B /* PhoneImagesCells.swift */,
+				74C91BA327610289009D142B /* PhoneImagesCells.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		74C91BAA27610579009D142B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				74C91BAB27610593009D142B /* PhoneDetailsTableViewCell.swift */,
+				74C91BAC27610593009D142B /* PhoneDetailsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		74E72725275BBC2F00B76092 = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +470,10 @@
 		74ECD200275C1CC900BDFF92 /* BrandsPhoneDetails */ = {
 			isa = PBXGroup;
 			children = (
+				74C91B922760F43B009D142B /* Model */,
+				74C91B912760F431009D142B /* ViewModel */,
+				74C91B902760F42B009D142B /* View */,
+				74C91B8F2760F412009D142B /* Coordinator */,
 			);
 			path = BrandsPhoneDetails;
 			sourceTree = "<group>";
@@ -473,13 +556,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E727B7275BC07B00B76092 /* LoginViewController.xib in Resources */,
+				74C91BAE27610593009D142B /* PhoneDetailsTableViewCell.xib in Resources */,
 				74E727AD275BC07A00B76092 /* DetailsTableViewCell.xib in Resources */,
+				74C91B9F2760F624009D142B /* PhoneDetailsViewController.xib in Resources */,
 				74E727C4275BC0E300B76092 /* GoogleService-Info.plist in Resources */,
 				74E727AF275BC07A00B76092 /* BrandsDetailsViewController.xib in Resources */,
 				74E727B3275BC07A00B76092 /* RegisterViewController.xib in Resources */,
 				74E7273E275BBC3300B76092 /* LaunchScreen.storyboard in Resources */,
 				74E727A7275BC07A00B76092 /* BrandsTableViewCell.xib in Resources */,
 				74E7273B275BBC3300B76092 /* Assets.xcassets in Resources */,
+				74C91BA527610289009D142B /* PhoneImagesCells.xib in Resources */,
 				74E727A8275BC07A00B76092 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,17 +632,23 @@
 				74E727BC275BC07B00B76092 /* AppDelegate.swift in Sources */,
 				74E727AE275BC07A00B76092 /* DetailsTableViewCell.swift in Sources */,
 				74E727AA275BC07A00B76092 /* BrandsDetailsViewModel.swift in Sources */,
+				74C91BAD27610593009D142B /* PhoneDetailsTableViewCell.swift in Sources */,
 				74E727AB275BC07A00B76092 /* BrandsDetailsCoordinator.swift in Sources */,
 				74E727A5275BC07A00B76092 /* CategoryModel.swift in Sources */,
 				74E727C0275BC07B00B76092 /* Extension.swift in Sources */,
+				74C91B9E2760F624009D142B /* PhoneDetailsViewController.swift in Sources */,
 				74E727B4275BC07B00B76092 /* RegisterViewController.swift in Sources */,
 				74E727B8275BC07B00B76092 /* LoginViewController.swift in Sources */,
+				74C91B942760F496009D142B /* BrandsPhoneDetailsModel.swift in Sources */,
 				74E727B6275BC07B00B76092 /* LoginCoordinator.swift in Sources */,
 				74E727BB275BC07B00B76092 /* AppCoordinator.swift in Sources */,
 				74E727AC275BC07A00B76092 /* BrandsDetails.swift in Sources */,
+				74C91B972760F59C009D142B /* PhoneDetailViewModel.swift in Sources */,
 				74E727A4275BC07A00B76092 /* HomeCoordinator.swift in Sources */,
+				74C91BA427610289009D142B /* PhoneImagesCells.swift in Sources */,
 				74E727BF275BC07B00B76092 /* ProgressHud.swift in Sources */,
 				74E727BA275BC07B00B76092 /* AuthFUser.swift in Sources */,
+				74C91B9A2760F5CE009D142B /* PhoneDetailCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

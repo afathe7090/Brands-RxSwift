@@ -31,6 +31,24 @@ class BrandsDetailsCoordinator: Coordinator {
         self.navigation.pushViewController(brandsVC, animated: true)
     }
     
+    func goToBrandsPhoneView(_ brands: Phone?){
+        let coordintor = PhoneDetailCoordinator(withNav: navigation, parent: self, brands: brands)
+        childCoordinators.append(coordintor)
+        coordintor.start()
+    }
+    
+    
+    
+    func didFinishedCoordinator(coordinator: Coordinator){
+        if let index = childCoordinators.firstIndex(where: { coordinstor in
+            return coordinator === coordinator
+        }){
+            childCoordinators.remove(at: index)
+            self.navigation.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    
     
     func returnToHome(){
         parentCoordinator?.didFinshCoordinator(coordinator: self)

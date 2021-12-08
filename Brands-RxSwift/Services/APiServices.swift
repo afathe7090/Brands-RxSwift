@@ -10,7 +10,7 @@ import Alamofire
 import UIKit
 
 
-let Base_Url = "https://api-mobilespecs.azharimm.site/v2/brands/"
+let Base_Url = "https://api-mobilespecs.azharimm.site/v2/"
 let Defult_header:HTTPHeaders = ["Content-Type":"application/json"]
 
 

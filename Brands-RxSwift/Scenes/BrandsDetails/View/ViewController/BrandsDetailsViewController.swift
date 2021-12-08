@@ -36,6 +36,7 @@ class BrandsDetailsViewController: UIViewController {
         bindingFromViewModelToTitleNavigation()
         bindingToCreatTableViewCell()
         handelBarButtonBack()
+        bindingTodiSelectTableView()
     }
     
     //----------------------------------------------------------------------------------------------------------------
@@ -59,6 +60,13 @@ class BrandsDetailsViewController: UIViewController {
             cell.setDataCell(model)
         }.disposed(by: bag)
         viewModel.fetchDataFromBrands()
+    }
+    
+    
+    func bindingTodiSelectTableView(){
+        tableView.rx.modelSelected(Phone.self).subscribe(onNext: { model in
+            self.viewModel.goToDetailsPhoneResult(model)
+        }).disposed(by: bag)
     }
     
     

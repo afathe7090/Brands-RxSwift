@@ -12,7 +12,6 @@ import Alamofire
 
 class HomeViewModel {
     
-    
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Proberties
     //----------------------------------------------------------------------------------------------------------------
@@ -37,8 +36,9 @@ class HomeViewModel {
     //----------------------------------------------------------------------------------------------------------------
     func fetchDataModel(){
         
+        let url = Base_Url + kBRANDS
         progressState.accept(true)
-        ApiService.Shared.fetchData(url: Base_Url, parms: nil, headers: Defult_header, method: .get) {[weak self] (category: Brands?, catregoryError: Brands?, error: Error?) in
+        ApiService.Shared.fetchData(url: url, parms: nil, headers: Defult_header, method: .get) {[weak self] (category: Brands?, catregoryError: Brands?, error: Error?) in
             
             guard let self = self else{return}
             

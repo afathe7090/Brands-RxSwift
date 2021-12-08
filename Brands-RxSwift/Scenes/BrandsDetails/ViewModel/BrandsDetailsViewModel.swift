@@ -49,7 +49,7 @@ class BrandsDetailsViewModel {
 
     func fetchDataFromBrands(){
         guard let dataCommingFromHome = dataCommingFromHome else { return }
-        let url = Base_Url + dataCommingFromHome.brand_slug
+        let url = Base_Url + kBRANDS + dataCommingFromHome.brand_slug
         ApiService.Shared.fetchData(url: url, parms: nil, headers: Defult_header, method: .get) {( details: BrandsDetails?, errorDetail: BrandsDetails?, error: Error? )in
             if let error = error {print(error.localizedDescription)
                 return
@@ -58,6 +58,11 @@ class BrandsDetailsViewModel {
             self.detailsSubject.onNext(details)
         }
         
+    }
+    
+    
+    func goToDetailsPhoneResult(_ brands: Phone?){
+        coordinator?.goToBrandsPhoneView(brands)
     }
     
     
