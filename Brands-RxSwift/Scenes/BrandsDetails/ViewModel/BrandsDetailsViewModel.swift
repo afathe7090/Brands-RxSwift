@@ -15,7 +15,7 @@ class BrandsDetailsViewModel {
     //=======>MARK: -  Proberties
     //----------------------------------------------------------------------------------------------------------------
     private weak var coordinator: BrandsDetailsCoordinator?
-    private var dataCommingFromHome: Datum?
+    private var dataCommingFromHome: BrandsData?
     private let detailsSubject: PublishSubject<BrandsDetails> = PublishSubject()
     
     var detailsList : Observable<[Phone]>{
@@ -34,7 +34,9 @@ class BrandsDetailsViewModel {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(withCoor coordinator: BrandsDetailsCoordinator, withDataComming: Datum?){
+    init(withCoor coordinator: BrandsDetailsCoordinator = BrandsDetailsCoordinator()
+         , withDataComming: BrandsData? = nil){
+        
         self.coordinator = coordinator
         self.dataCommingFromHome = withDataComming
     }

@@ -12,10 +12,13 @@ class BrandsDetailsCoordinator: Coordinator {
     private(set) var childCoordinators: [Coordinator] = []
     private var navigation: UINavigationController!
     private weak var parentCoordinator: HomeCoordinator?
-    private var dataBack: Datum?
+    private var dataBack: BrandsData?
     
     
-    init(with navigation: UINavigationController, withCoor coordinator: HomeCoordinator ,withData: Datum? = nil){
+    init(with navigation: UINavigationController = UINavigationController()
+         , withCoor coordinator: HomeCoordinator = HomeCoordinator ()
+         ,withData: BrandsData? = nil){
+        
         self.navigation = navigation
         self.parentCoordinator = coordinator
         self.dataBack = withData

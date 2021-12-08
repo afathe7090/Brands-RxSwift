@@ -21,7 +21,7 @@ class LoginCoordinator: Coordinator {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(_ navigationView: UINavigationController){
+    init(_ navigationView: UINavigationController = UINavigationController()){
         self.rootViewController  = navigationView
     }
     

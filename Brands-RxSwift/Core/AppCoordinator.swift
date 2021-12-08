@@ -19,7 +19,7 @@ class AppCoordinator: Coordinator{
     private var window: UIWindow?
     private let navigation = UINavigationController()
     
-    init(_ window: UIWindow){
+    init(_ window: UIWindow = UIWindow()){
         self.window = window
     }
     

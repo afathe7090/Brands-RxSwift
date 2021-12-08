@@ -18,8 +18,8 @@ class HomeViewModel {
     //----------------------------------------------------------------------------------------------------------------
     private weak var coordinator: HomeCoordinator?
     
-    private let brandsSubject: PublishSubject<[Datum]> = PublishSubject()
-    var brandsList: Observable<[Datum]> {
+    private let brandsSubject: PublishSubject<[BrandsData]> = PublishSubject()
+    var brandsList: Observable<[BrandsData]> {
         return brandsSubject
     }
     let progressState: BehaviorRelay<Bool> = BehaviorRelay(value: false)
@@ -28,7 +28,7 @@ class HomeViewModel {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(withCoor coordinator: HomeCoordinator){
+    init(withCoor coordinator: HomeCoordinator = HomeCoordinator()){
         self.coordinator = coordinator
     }
     
@@ -54,7 +54,7 @@ class HomeViewModel {
     }
     
     
-    func didSelectItemsTableView(_ data: Datum){
+    func didSelectItemsTableView(_ data: BrandsData){
         self.coordinator?.gotToBrandsDetails(data)
     }
     

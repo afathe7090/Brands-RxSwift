@@ -23,7 +23,7 @@ class LoginViewModel{
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(withCoor coordinator: LoginCoordinator){
+    init(withCoor coordinator: LoginCoordinator = LoginCoordinator()){
         self.coordinator = coordinator
     }
     

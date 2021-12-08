@@ -10,11 +10,11 @@ import Foundation
 // MARK: - Brands
 struct Brands: Codable {
     let status: Bool?
-    let data: [Datum]?
+    let data: [BrandsData]?
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct BrandsData: Codable {
     let brand_id: Int
     let brand_name, brand_slug: String
     let device_count: Int

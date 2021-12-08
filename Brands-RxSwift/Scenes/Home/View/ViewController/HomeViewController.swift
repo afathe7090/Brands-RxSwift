@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init( viewModel: HomeViewModel){
+    init( viewModel: HomeViewModel = HomeViewModel()){
         super.init(nibName: "HomeViewController", bundle: nil)
         self.viewModel = viewModel
     }
@@ -94,7 +94,7 @@ class HomeViewController: UIViewController {
     
     private func setDidSelectTableView(){
         tableView.rx
-            .modelSelected(Datum.self)
+            .modelSelected(BrandsData.self)
             .subscribe(onNext: { model in
                 self.viewModel.didSelectItemsTableView(model)
         }).disposed(by: bag)

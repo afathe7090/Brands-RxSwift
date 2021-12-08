@@ -132,6 +132,7 @@
 		74E72765275BC07A00B76092 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				74ECD200275C1CC900BDFF92 /* BrandsPhoneDetails */,
 				74E72782275BC07A00B76092 /* Auth */,
 				74E72766275BC07A00B76092 /* Home */,
 				74E72774275BC07A00B76092 /* BrandsDetails */,
@@ -385,6 +386,13 @@
 				74E7273C275BBC3300B76092 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		74ECD200275C1CC900BDFF92 /* BrandsPhoneDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BrandsPhoneDetails;
 			sourceTree = "<group>";
 		};
 		98AAF301BE1003BAFD54E8EB /* Pods */ = {

@@ -13,7 +13,8 @@ class HomeCoordinator: Coordinator{
     private var navigation: UINavigationController!
     private weak var parentCoordinator: LoginCoordinator?
     
-    init(with navigation: UINavigationController ,with parentCoordinator: LoginCoordinator? = nil) {
+    init(with navigation: UINavigationController = UINavigationController()
+         ,with parentCoordinator: LoginCoordinator? = nil) {
         self.navigation = navigation
         self.parentCoordinator = parentCoordinator
     }
@@ -46,7 +47,7 @@ class HomeCoordinator: Coordinator{
     }
     
     
-    func gotToBrandsDetails(_ data: Datum){
+    func gotToBrandsDetails(_ data: BrandsData){
         let brandsCoordinator = BrandsDetailsCoordinator(with: navigation, withCoor: self, withData: data)
         self.childCoordinators.append(brandsCoordinator)
         brandsCoordinator.start()

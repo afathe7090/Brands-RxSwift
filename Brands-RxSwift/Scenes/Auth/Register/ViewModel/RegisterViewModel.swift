@@ -26,7 +26,7 @@ class RegisterViewModel {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(withCoor coordinator: RegisterCoordinator){
+    init(withCoor coordinator: RegisterCoordinator = RegisterCoordinator()){
         self.coordinator = coordinator
     }
     

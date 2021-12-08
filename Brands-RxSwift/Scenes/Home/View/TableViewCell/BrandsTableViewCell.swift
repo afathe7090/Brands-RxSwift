@@ -24,7 +24,7 @@ class BrandsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setCell(data: Datum){
+    func setCell(data: BrandsData){
         self.brandCounterLabel.text = "\(data.device_count)"
         self.brandNameLabel.text = data.brand_name
     }

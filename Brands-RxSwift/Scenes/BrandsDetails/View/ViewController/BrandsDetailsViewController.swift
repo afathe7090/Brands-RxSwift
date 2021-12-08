@@ -20,7 +20,7 @@ class BrandsDetailsViewController: UIViewController {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  init
     //----------------------------------------------------------------------------------------------------------------
-    init(viewModel: BrandsDetailsViewModel){
+    init(viewModel: BrandsDetailsViewModel = BrandsDetailsViewModel()){
         super.init(nibName: "BrandsDetailsViewController", bundle: nil)
         self.viewModel = viewModel
     }

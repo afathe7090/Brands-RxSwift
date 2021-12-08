@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Init
     //----------------------------------------------------------------------------------------------------------------
-    init(viewModel: RegisterViewModel){
+    init(viewModel: RegisterViewModel = RegisterViewModel()){
         super.init(nibName: "RegisterViewController", bundle: nil)
         self.viewModel = viewModel
     }

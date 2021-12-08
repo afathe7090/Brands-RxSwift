@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Initialization
     //----------------------------------------------------------------------------------------------------------------
-    init(viewModel: LoginViewModel){
+    init(viewModel: LoginViewModel = LoginViewModel()){
         super.init(nibName: "LoginViewController", bundle: nil)
         self.viewModel = viewModel
     }

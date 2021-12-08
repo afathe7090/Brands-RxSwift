@@ -21,7 +21,7 @@ class RegisterCoordinator: Coordinator {
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  init
     //----------------------------------------------------------------------------------------------------------------
-    init(_ navigation: UINavigationController, parentCoor: LoginCoordinator? = nil){
+    init(_ navigation: UINavigationController = UINavigationController(), parentCoor: LoginCoordinator? = nil){
         self.navigation = navigation
         self.parentCoordinator = parentCoor
     }
