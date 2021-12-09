@@ -11,14 +11,14 @@ import Foundation
 // MARK: - BrandsDetails
 struct BrandsPhone: Codable  {
     let status: Bool?
-    let data: BrandsPhoneDetails?
+    let data: BrandsPhoneDetails
 }
 
 // MARK: - DataClass
 struct BrandsPhoneDetails: Codable  {
     let brand, phone_name: String?
     let thumbnail: String?
-    let phone_images: [String]?
+    let phone_images: [String]
     let release_date, dimension, os, storage: String?
     let specifications: [Specification]?
 }

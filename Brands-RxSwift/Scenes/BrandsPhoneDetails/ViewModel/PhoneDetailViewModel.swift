@@ -17,7 +17,19 @@ class PhoneDetailViewModel{
     //----------------------------------------------------------------------------------------------------------------
     private weak var coordinator: PhoneDetailCoordinator?
     private var brandsCom: Phone?
-    private var phoneDetail = PublishSubject<BrandsPhone>()
+    private var phoneDetails = PublishSubject<BrandsPhone>()
+    
+    var imageCollection: Observable<[String]> {
+        return phoneDetails.asObserver().map { phone in
+            return phone.data.phone_images
+        }
+    }
+    
+    var phoneDetail: Observable<BrandsPhoneDetails> {
+        return phoneDetails.asObservable().map { phone in
+            return phone.data
+        }
+    }
     
     
     //----------------------------------------------------------------------------------------------------------------
@@ -36,17 +48,16 @@ class PhoneDetailViewModel{
     //----------------------------------------------------------------------------------------------------------------
     
     
+    // finish Coordinator from Memory after deInit
     func didFinishDeinit(){
         coordinator?.didFinishView()
     }
     
     
+    // fetch Phone Data From Api
     func fetchDataAPI(){
         guard let urlDetailKey = brandsCom?.slug else{ return }
-        
-        print(urlDetailKey)
         let url = Base_Url + urlDetailKey
-        print("============ url")
         
         ApiService.Shared.fetchData(url: url, parms: nil, headers: Defult_header, method: .get) {( phone: BrandsPhone?, phoneError: BrandsPhone?, error: Error? )in
             
@@ -54,14 +65,10 @@ class PhoneDetailViewModel{
                 print(error.localizedDescription)
                 return
             }
-            
             if let phone = phone {
-                print(phone)
+                self.phoneDetails.onNext(phone)
             }
-            
         }
-        
-        
     }
     
     
