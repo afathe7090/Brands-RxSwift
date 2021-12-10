@@ -2,8 +2,8 @@
 
 # What did I use ?
 
-             MVVM Coordinator 
-             RxSwift 
-             Firebase
-             API
+         MVVM-Coordinator 
+         RxSwift 
+         Firebase
+         API
  
