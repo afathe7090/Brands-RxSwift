@@ -5,5 +5,6 @@
          MVVM-Coordinator 
          RxSwift 
          Firebase
-         API
+         API 
+            link: https://api-mobilespecs.azharimm.site/v2/brands
  
