@@ -10,7 +10,7 @@ import RxCocoa
 import RxSwift
 
 class RegisterViewController: UIViewController {
-
+    
     private var viewModel: RegisterViewModel!
     private let bag = DisposeBag()
     
@@ -37,7 +37,7 @@ class RegisterViewController: UIViewController {
     
     required init?(coder: NSCoder) {fatalError("init(coder:) has not been implemented")}
     
-
+    
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Life Cycle
     //----------------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ class RegisterViewController: UIViewController {
         startBindingFromViewModelToRegisterButton()
         startActionToRegisterButtonPressed()
     }
-
+    
     
     //----------------------------------------------------------------------------------------------------------------
     //=======>MARK: -  Helper Functions
@@ -64,7 +64,7 @@ class RegisterViewController: UIViewController {
     }
     
     
-        
+    
     func bindingToViewModel(){
         emailTextField.rx.text.orEmpty
             .bind(to: viewModel.emailObservable).disposed(by: bag)
@@ -77,14 +77,13 @@ class RegisterViewController: UIViewController {
     }
     
     
- 
     
-        
+    
+    
     func startBindingFromViewModelToPasswordTextField(){
         viewModel.passwordValid().bind { state in
             self.passwordValidLabel.textColor = state ? .green:.red
             self.passwordValidLabel.text = state ? "Password Is Valid 😀😀 " : "You must Enter min 8 char "
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 UIView.animate(withDuration: 0.2) {
                     self.passwordValidLabel.alpha = state ? 0:1
@@ -136,5 +135,5 @@ class RegisterViewController: UIViewController {
             self.viewModel.creatUser()
         }.disposed(by: bag)
     }
-
+    
 }
